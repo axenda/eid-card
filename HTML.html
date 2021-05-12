@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اكسندا | بطاقة تهنئة رهيبة </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./logoax.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <img src="./axendalogo1.svg" alt="Axenda Team">
+        <h1>بطاقة تهنئة</h1>
+        <img src="./div.svg" alt="Axenda Team" style="height: 10px;">
+        <!-- <h1> <a href="https://www.youtube.com/channel/UCUwURiBONxHJw1vdxU_RGkw" target="_blank" -->
+            <h4>ادخل اسمك لتحصل على بطاقة تهنئة رهيبة  </h4>
+    </header>
+    <main>
+
+        <label for="name">اكتب اسمك</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder=" اكتب اسمك الثنائي" id="name" minlength="3"
+            maxlength="16">
+        <Button id="submitBtn">
+        <a  id="download-btn">حمل البطاقة</a>
+    </Button>
+        <canvas id="canvas" height="538px" width="356px"></canvas>
+
+
+
+    </main>
+    <!-- <script src="https://unpkg.com/pdf-lib@1.4.0"></script> -->
+    <script src="./FileSaver.js"></script>
+    <!-- <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script> -->
+    <script src="./index.js"></script>
+</body>
+
+</html>

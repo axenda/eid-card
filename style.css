@@ -1,0 +1,112 @@
+:root {
+  color: #36393f  ;
+}
+
+body {
+  background-color:#1e1e1e;
+  font-family: 'Tajawal';
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+h4 {
+  
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  color: #8E8E8E;
+  font-weight: bold;
+ 
+}
+h1 {
+  margin-top: 40px;
+  font-size: 1.2em;
+  font-weight:bold;
+}
+
+img {
+  
+  height: 150px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main * {
+  margin-bottom: 12px;
+}
+
+input {
+  background-color:#e5e4e2;
+  text-align: center;
+  font-size: large;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #daaa6c;
+  text-transform: capitalize;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* for styling the autocomplete style */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--dark-color) !important;
+}
+
+button {
+  background: #e5e4e2
+  ;
+  color: #36393f
+  ;
+  border: #e5e4e2;
+  font-size: 0.8em;
+  padding: 10px 20px;
+  margin: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background: #daaa6c
+  ;
+}
+
+a {
+  color: #36393f
+  ;
+  font-family: 'Tajawal';
+  
+}
+a:hover{
+
+  color: #e5e4e2
+  ;
+}
+
+/* dark mode css */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(color);
+    color: #e5e4e2;
+  }
+  input,
+  input:active {
+    background: var(--dark-color);
+    border-color: #e5e4e2;
+    color: #e5e4e2;
+  }
+
+  /* for styling the autocomplete style */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #e5e4e2 !important;
+  }
+}
