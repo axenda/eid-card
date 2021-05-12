@@ -10,6 +10,10 @@ body {
   font-size: 1.5em;
 }
 
+*{
+  font-family: 'Tajawal', sans-serif;
+}
+
 h4 {
   
   margin-bottom: 20px;
