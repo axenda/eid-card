@@ -14,9 +14,9 @@ function drawImage() {
 	ctx.drawImage(image, 0, 0, canvas.width, canvas.height)
 	ctx.font = 'bold 13px Tajawal'
 	ctx.fillStyle = '#cc9f66'
-	ctx.textAlign = 'right';
+	ctx.textAlign = 'center';
 	
-	ctx.fillText(nameInput.value,200,390)
+	ctx.fillText(nameInput.value,175,390)
 }
 
 nameInput.addEventListener('input', function () {
