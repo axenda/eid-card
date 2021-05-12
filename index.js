@@ -16,7 +16,7 @@ function drawImage() {
 	ctx.fillStyle = '#cc9f66'
 	ctx.textAlign = 'right';
 	
-	ctx.fillText(nameInput.value,195,390)
+	ctx.fillText(nameInput.value,200,390)
 }
 
 nameInput.addEventListener('input', function () {
