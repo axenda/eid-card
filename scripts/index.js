@@ -2,14 +2,16 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const nameInput = document.getElementById('name');
 
-const image = new Image()
-image.src = 'assets/card.png'
+const image = new Image();
+image.src = 'assets/card.png';
 image.onload = function () {
     drawImage();
 }
 
 function drawImage() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.imageSmoothingEnabled = false;
+    
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
     ctx.font = 'bold 13px Tajawal';
     ctx.fillStyle = '#cc9f66';
