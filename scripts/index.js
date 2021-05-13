@@ -2,26 +2,30 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const nameInput = document.getElementById('name');
 
+canvas.style.width = '356px';     // show at 50% on screen
+canvas.style.height = '538px';
+
 const image = new Image();
-image.src = 'assets/card.png';
+image.src = 'assets/card.svg';
 image.onload = function () {
-    drawImage();
+    drawImage(canvas.width, canvas.height);
 }
 
-function drawImage() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+function drawImage(width, height) {
+    ctx.clearRect(0, 0, width, height);
     ctx.imageSmoothingEnabled = false;
-    
-    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-    ctx.font = 'bold 13px Tajawal';
+
+    ctx.drawImage(image, 0, 0, width, height);
+
+    ctx.font = 'bold 24px Tajawal';
     ctx.fillStyle = '#cc9f66';
     ctx.textAlign = 'center';
-
-    ctx.fillText(nameInput.value.trim(), 178, 390);
+    ctx.fillText(nameInput.value.trim(), width / 2, height - 280);
 }
 
 nameInput.addEventListener('input', function () {
-    drawImage();
+    drawImage(canvas.width, canvas.height);
 })
 
 function download() {
