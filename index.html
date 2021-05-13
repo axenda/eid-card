@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اكسندا | بطاقة تهنئة  </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./logoax.ico" type="image/x-icon" />
+    <title>اكسندا | بطاقة تهنئة</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="assets/axenda-logo.ico" type="image/x-icon"/>
+
+    <!--  Google Font  -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        
-            <svg  height="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.87 98.39"><defs><style >.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.38px;}.cls-2,.cls-3{fill:#fff;}.cls-3{font-size:23.53px;font-family:Tajawal-Medium, Tajawal;font-weight:500;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M75.19,68.37h0L41.81,1.29A.87.87,0,0,0,40.66.83a.81.81,0,0,0-.45.46L6.31,68.08l-.15.28-.48.88,23.5-27.89a.89.89,0,0,1,1.26-.13l.08.08,9.84,10.44a.89.89,0,0,0,1.25,0l0,0L51.5,41.32a.9.9,0,0,1,1.26,0l.09.1L75.7,69.25Z"/><path class="cls-1" d="M70.58,69.88v0L37.23,2.83a.86.86,0,0,0-1.15-.45.9.9,0,0,0-.45.45L1.71,69.62l-.15.28-.48.88,23.5-27.9a.9.9,0,0,1,1.26-.12l.08.08,9.84,10.43a.89.89,0,0,0,1.25.06l.05-.06,9.85-10.41a.88.88,0,0,1,1.25,0,.47.47,0,0,1,.1.1l22.8,27.88Z"/><path class="cls-2" d="M72.89,67.58h0L39.53.53A.87.87,0,0,0,38.38.07a.81.81,0,0,0-.45.46L4,67.31l-.15.28-.48.88,23.5-27.9a.89.89,0,0,1,1.26-.11l.08.07L38.1,51a.87.87,0,0,0,1.24.05.12.12,0,0,0,0-.05l9.84-10.42a.89.89,0,0,1,1.25,0l.1.1L73.35,68.48Z"/><text class="cls-3" transform="translate(3.75 89.57)">اكسندا</text></g></g></svg>
+<header>
+    <img src="assets/axenda-logo.svg" alt="axenda logo">
+    <h1>اكسندا</h1>
 
-        <h1>بطاقة تهنئة</h1>
-        <img src="./div.svg" alt="Axenda Team" style="height: 10px;">
-        <!-- <h1> <a href="https://www.youtube.com/channel/UCUwURiBONxHJw1vdxU_RGkw" target="_blank" -->
-            <h4>ادخل اسمك لتحصل على البطاقة </h4>
-    </header>
-    <main>
+    <h2>بطاقة تهنئة</h2>
+    <img src="assets/separator.svg" alt="Axenda Team" style="height: 10px;">
+</header>
 
-        <input required type="text" name="Name" autocomplete="name" placeholder=" ادخل اسمك الثنائي" id="name" minlength="3"
-            maxlength="16">
-        <Button id="submitBtn">
-        <a  id="download-btn">حمّل البطاقة</a>
-    </Button>
-        <canvas id="canvas" height="538px" width="356px"></canvas>
+<main>
+    <label for="name">ادخل اسمك لتحصل على البطاقة </label>
+    <input id="name" required type="text" name="Name" autocomplete="name" placeholder="ادخل اسمك الثنائي" minlength="3"
+           maxlength="31">
 
+    <button id="download-btn" onclick="download()">حمّل البطاقة</button>
 
+    <canvas id="canvas" height="538px" width="356px"></canvas>
+    <a id="link"></a>
+</main>
 
-    </main>
-    <!-- <script src="https://unpkg.com/pdf-lib@1.4.0"></script> -->
-    <script src="./FileSaver.js"></script>
-    <!-- <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script> -->
-    <script src="./index.js"></script>
+<script src="scripts/file-saver.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 
 </html>
