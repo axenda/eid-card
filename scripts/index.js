@@ -14,6 +14,9 @@ image.onload = function () {
 
 function drawImage(width, height) {
     ctx.clearRect(0, 0, width, height);
+    
+    ctx.webkitImageSmoothingEnabled = false;
+    ctx.mozImageSmoothingEnabled = false;
     ctx.imageSmoothingEnabled = false;
 
     ctx.drawImage(image, 0, 0, width, height);
