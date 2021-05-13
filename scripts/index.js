@@ -18,10 +18,10 @@ function drawImage(width, height) {
 
     ctx.drawImage(image, 0, 0, width, height);
 
-    ctx.font = 'bold 24px Tajawal';
+    ctx.font = 'bold 70px Tajawal';
     ctx.fillStyle = '#cc9f66';
     ctx.textAlign = 'center';
-    ctx.fillText(nameInput.value.trim(), width / 2, height - 280);
+    ctx.fillText(nameInput.value.trim(), (width / 2 - 19), height - 700);
 }
 
 nameInput.addEventListener('input', function () {
