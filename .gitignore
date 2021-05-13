@@ -3,4 +3,8 @@ node_modules
 .cache
 .DS_Store
 .DS_Store.br
+.DS_Store..br
+.DS_Store..br
+.gitignore..br
+README.md.br
 .idea
